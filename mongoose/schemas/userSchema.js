@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-module.exports.run = (client) => {
+module.exports.run = () => {
 
 const userSchema = new mongoose.Schema({
     guildID: {type: String},

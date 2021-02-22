@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const { config } = require("dotenv");
 const fs = require("fs");
-const { stripIndents } = require("common-tags");
 let mongoose = require("mongoose");
 const global = require("./global");
 

@@ -49,10 +49,6 @@ module.exports = {
             global.music.queue.titles.shift();
 
 
-
-            //if(!queuem[0]) return connection.disconnect() && message.channel.send(`Queue empty.`);
-
-
             server.dispatcher.on("finish", function () {
 
                 if (global.music.queue.links[0]) {
@@ -60,7 +56,7 @@ module.exports = {
                 } else {
                     connection.disconnect();
                     message.channel.send(`Queue empty.`);
-                    global.music.title = ""
+                    global.music.title = "";
                 }
 
 

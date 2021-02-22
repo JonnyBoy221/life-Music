@@ -5,11 +5,11 @@ module.exports = {
     name: "queue",
     category: "general",
     run: async (client, message, args) => {
+
         let queue = global.music.queue;
 
 
         if (queue.links.length < 1) return message.channel.send("The queue is empty");
-
 
 
         if (queue.links) {
@@ -27,7 +27,6 @@ module.exports = {
                 console.log(i)
                 embed.setAuthor(`Page ${i} of ${Math.ceil(queue.links.length / 15)}`)
                 test: for (let i2 = 1; i2 <= 15; i2++) {
-                    //console.log(i3)
                     embed.setDescription(embed.description == undefined ? `**${i3}:** ` + `[${queue.titles[i3 - 1].replace(/\|/g, "\\|")}](${queue.links[i3 - 1]})` : embed.description += '\n' + `**${i3}:** ` + `[${queue.titles[i3 - 1].replace(/\|/g, "\\|")}](${queue.links[i3 - 1]})`)
                     if (i3 === queue.links.length) break test;
 

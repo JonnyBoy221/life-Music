@@ -2,9 +2,7 @@ const { readdirSync } = require("fs");
 const ascii = require("ascii-table");
 let table = new ascii("Commands");
 
-
 table.setHeading("Command", "Load status");
-
 
 module.exports = (client) => {
     readdirSync("./commands/").forEach(dir => {
@@ -26,7 +24,5 @@ module.exports = (client) => {
             });
         }
     });
-
      console.log(table.toString());
-//if (client.shard.ids[0] === 0)
 };

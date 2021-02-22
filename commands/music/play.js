@@ -55,7 +55,6 @@ module.exports = {
                 playmsg.delete();
 
 
-
                 console.log(selected)
 
                 if (!message.member.voice.channel) {
@@ -93,7 +92,6 @@ module.exports = {
         } else if(!args[0].toLowerCase().includes('playlist?list=') && !args[0].toLowerCase().includes('&list=')) {
 
             queue = global.music.queue;
-
 
             result = await search(args[0], { maxResults: 10, key: process.env.ytApiKey }).catch(err => console.log(err));
             var selected = result.results[0]
@@ -152,18 +150,12 @@ module.exports = {
                     message.channel.send(embed);
                 });
 
-
         }
 
         function joinVc() {
             if (!global.music.playing) message.member.voice.channel.join().then(function (connection) {
 
-                console.log(queue)
-
-
                 if (!global.music.title) { global.music.play(connection, message); }
-
-                console.log('play')
 
             })
         }

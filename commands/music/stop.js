@@ -12,7 +12,7 @@ module.exports = {
         global.music.queue.links.length = 0;
         global.music.queue.titles.length = 0;
 
-        message.member.voice.channel.leave()
+        message.member.voice.channel.leave();
         message.channel.send("Stopped the current song and cleared the queue.");
 
     }
