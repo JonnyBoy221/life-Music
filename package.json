@@ -1,14 +1,28 @@
 {
   "name": "life-music",
-  "version": "1.0.0",
-  "description": "",
+  "version": "14.15.1",
+  "description": "Life Music is a discord bot that belongs to the [LifeBot](https://github.com/ZombieSlayer-19/lifebot) project",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonnyBoy221/life-Music.git"
   },
-  "keywords": [],
-  "author": "",
+
+  "bugs": {
+    "url": "https://github.com/JonnyBoy221/life-Music/issues"
+  },
+
+  "homepage": "https://github.com/JonnyBoy221/life-Music#readme",
+  
+  "keywords": [
+    "JavaScript",
+    "Discord.js"
+  ],
+  "author": "JonnyBoy221",
   "license": "ISC",
+
   "dependencies": {
     "@discordjs/opus": "^0.4.0",
     "ascii-table": "0.0.9",
